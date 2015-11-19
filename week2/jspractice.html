@@ -1,0 +1,26 @@
+<style>
+.done{
+color: rgb(193, 193, 193);
+text-decoration: line-through;
+}
+</style>
+
+
+<ul>
+	<li class="done">one</li>
+	<li>two</li>
+	<li>three</li>
+</ul>
+
+<script>
+var listItem = document.querySelector("li");
+
+//listItem.setAttribute("style", "color: red")
+
+listItem.addEventListener("click", itemclicked);
+
+function itemClicked(event){
+	listItem.classList.add("done");
+
+}
+</script>
