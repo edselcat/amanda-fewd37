@@ -6,17 +6,10 @@
 <title>Forms</title>
 <style media="screen">
 .container{
-  width: 300px;
-  margin:; 0 auto;
-  display: inline-block;
+  margin: 0 auto;
 }
+label { display: inline-block; width: 300px; text-align: right; }​
 
-label{
-  cursor: default;
-}
-.tab {
-  width: 150px;
-}
 </style>
 </head>
 
@@ -25,20 +18,19 @@ label{
     <form>
       <!-- form tag tells browser where to save. submit element is key to event JS - serves to save -->
     <div class="form-row">
-     <label>
-      <span class="tab">First Name: </span><input type="text"> 
+     <label>First Name: <input type="text"> 
     </label>
    </div>
    <p>
     <div class="form-row">
-     <label><span class="tab">Email: </span><input type="email"> </label>
+     <label>Email: <input type="email"> </label>
    </div>
    <p>
     <div class="form-row">
-     <label><span class="tab">Phone: </span><input type="text"> </label>
+     <label>Phone: <input type="text"> </label>
    </div>
    <p>
-     <label><span class="tab">Job: </span>
+     <label>Job: 
        <select>
          <option value="" disabled selected> Select one... </option>
          <option> Designer </option>
@@ -47,9 +39,9 @@ label{
        </select>
      </label>
    <p>
-     <label><span class="tab"><input type="checkbox"> Agree to Terms </span></label>
+     <label><input type="checkbox"> Agree to Terms </label>
    <p>
-     <label><span class="tab"> <input type="submit" value="Submit"></span> </label>
+     <label><input type="submit" value="Submit"></label>
      </form>
    </div>
  </body>
