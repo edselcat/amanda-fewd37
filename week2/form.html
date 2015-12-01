@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Forms</title>
+<style media="screen">
+.container{
+  width: 300px;
+  margin:; 0 auto;
+  display: inline-block;
+}
+
+label{
+  cursor: default;
+}
+.tab {
+  width: 150px;
+}
+</style>
+</head>
+
+<body>
+  <div class="container">
+    <form>
+      <!-- form tag tells browser where to save. submit element is key to event JS - serves to save -->
+    <div class="form-row">
+     <label>
+      <span class="tab">First Name: </span><input type="text"> 
+    </label>
+   </div>
+   <p>
+    <div class="form-row">
+     <label><span class="tab">Email: </span><input type="email"> </label>
+   </div>
+   <p>
+    <div class="form-row">
+     <label><span class="tab">Phone: </span><input type="text"> </label>
+   </div>
+   <p>
+     <label><span class="tab">Job: </span>
+       <select>
+         <option value="" disabled selected> Select one... </option>
+         <option> Designer </option>
+         <option> Engineer </option>
+         <option> Other </option>
+       </select>
+     </label>
+   <p>
+     <label><span class="tab"><input type="checkbox"> Agree to Terms </span></label>
+   <p>
+     <label><span class="tab"> <input type="submit" value="Submit"></span> </label>
+     </form>
+   </div>
+ </body>
+ </html>
+
