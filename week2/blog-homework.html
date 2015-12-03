@@ -103,6 +103,20 @@
       </form>
     </main>
 
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<script type="text/javascript">
+      var link = document.querySelector(".like-link");
+      var form = document.querySelector("#new-comment");
+      link.addEventListener("click", like);
+      form.addEventListener("submit", comment);
+      function like(event) {
+        event.preventDefault();
+       var likeCount = document.querySelector(".like-count");
+       likeCount.textContent = parseInt(likeCount.textContent) + 1;
+=======
+>>>>>>> Stashed changes
     <script>
       var link = document.querySelector(".like-link");
       var form = document.querySelector("#new-comment");
@@ -116,13 +130,39 @@
        var likeCount = document.querySelector(".like-count");
        likeCount.textContent = parseInt(likeCount.textContent) + 1;
 
+<<<<<<< Updated upstream
+=======
+>>>>>>> origin/gh-pages
+>>>>>>> Stashed changes
       }
 
       function comment(event) {
         event.preventDefault();
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+        //add here 
+      if (commentBody.value.length > 0) {
+        var comment = document.createElement("div");
+        comment.setAttribute("class", "comment");
+        comment.textContent = commentBody.value;
+        comments.appendChild(comment);
+        
+      }
+
+     
+    </script>
+  </body>
+</html>
+=======
+>>>>>>> Stashed changes
 
         var newCommentBody = document.querySelector("#new-comment-body");
       }
     </script>
   </body>
 </html>
+<<<<<<< Updated upstream
+=======
+>>>>>>> origin/gh-pages
+>>>>>>> Stashed changes
