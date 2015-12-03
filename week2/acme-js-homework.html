@@ -29,6 +29,11 @@
 	nav{
 		float: right;
 	}
+
+	img{
+		float: left;
+		width: 20%;
+	}
 	main{
 		border-bottom: 1px solid rgba(0, 0, 0, 1);
 		padding-bottom: 30px;
@@ -84,28 +89,34 @@ var header = document.querySelector("header");
 header.appendChild(nav);
 
 //Logo
-/*var img = document.createElement("img");
-var nav = document.querySelector("nav");
-image.setAttribute("src", "images/logo.jpg");
-nav.appendChild(img);*/
+var image = document.createElement("img");
+image.setAttribute("src", "../images/logo.jpg");
+header.appendChild(image);
+
+//Create UL
+var newList = document.createElement("ul");
+var nav = document.querySelector("nav")
+nav.appendChild(newList);
+console.log(newList)
 
 //Create LI
 var newListItem = document.createElement("li");
-newListItem.textContent = "Products";
 var parentList = document.querySelector("ul");
 parentList.appendChild(newListItem);
 
+var newListItem2 = document.createElement("li");
+var parentList = document.querySelector("ul");
+parentList.appendChild(newListItem2);
+
 // Link
 var link = document.createElement("a");
-var nav = document.querySelector("nav");
-a.textContent = "Products";
-nav.appendChild(a);
+link.textContent = "Products";
+newListItem.appendChild(link);
 
 // Create the sign up button
 var button = document.createElement("button");
-var nav = document.querySelector("nav");
 button.textContent = "Sign up";
-nav.appendChild(button);
+newListItem2.appendChild(button);
 
 //Create Main
 var main = document.createElement("main");

@@ -108,30 +108,31 @@
       var form = document.querySelector("#new-comment");
 
       link.addEventListener("click", like);
-      form.addEventListener("submit", comment);
+      // form.addEventListener("submit", comment);
 
       function like(event) {
         event.preventDefault();
+        console.log(event)
 
        var likeCount = document.querySelector(".like-count");
        likeCount.textContent = parseInt(likeCount.textContent) + 1;
 
       }
 
-      function comment(event) {
-        event.preventDefault();
+      // function comment(event) {
+      //   event.preventDefault();
 
-          //add here 
-        if (commentBody.value.length > 0) {
-          var comment = document.createElement("div");
-          comment.setAttribute("class", "comment");
-          comment.textContent = commentBody.value;
-          comments.appendChild(comment);
+      //     //add here 
+      //   if (commentBody.value.length > 0) {
+      //     var comment = document.createElement("div");
+      //     comment.setAttribute("class", "comment");
+      //     comment.textContent = commentBody.value;
+      //     comments.appendChild(comment);
           
-        }
+      //   }
 
-        var newCommentBody = document.querySelector("#new-comment-body");
-      }
+      //   var newCommentBody = document.querySelector("#new-comment-body");
+      // }
     </script>
   </body>
 </html>
